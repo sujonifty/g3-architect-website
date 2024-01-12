@@ -13,8 +13,10 @@
 .btn-primary {
     width: 11rem;
     height: 4rem;
-    flex-shrink: 0;
-    border-radius: 8px;
+    margin: 1.25rem;
+    padding: 1rem;
+    border: 0rem;
+    border-radius: 0.5rem;
     background: #FF900E;
     text-align: center;
 }
@@ -63,20 +65,57 @@ a {
 .banner {
     width: 44%;
     margin: 0px auto;
+    text-align: center;
 }
 
 .banner-title {
     color: #131313;
-    text-align: center;
     font-size: 4rem;
     font-weight: 700;
 }
 
 .banner-description {
     color: #727272;
-    text-align: center;
     font-size: 1rem;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 1.5rem;
+}
 
+.banner-img img{
+    width:calc(100% - 4rem) ;
+    padding: 1rem 2rem;
+}
+
+
+
+
+
+/* --------small device------- */
+@media screen and (max-width:576px){
+    
+    .same-container {
+        width: 98%;
+        margin: 0rem auto;
+    }
+    nav {
+
+        flex-direction: column;
+    }
+    .nav-bar ul li{
+        margin: 1rem;
+    }
+    .banner {
+        width: 100%;
+    }
+}
+
+/* --------medium device------- */
+@media screen and (min-width: 577px)  and (max-width: 992px) {
+    nav {
+
+        flex-direction: column;
+    }
+    .banner {
+        width: 100%;
+    }
 }
