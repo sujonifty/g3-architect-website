@@ -8,6 +8,7 @@
 .same-container {
     width: 75%;
     margin: 0rem auto;
+    padding: 1rem;
 }
 
 .section-title {
@@ -127,6 +128,10 @@ a {
     font-weight: 700;
 }
 
+/* ------feature section---- */
+
+
+/* ------facts cards section---- */
 .fact-cards-container {
     display: flex;
     justify-content: space-around;
@@ -148,6 +153,16 @@ a {
     font-size: 1.25rem;
     font-weight: 600;
 }
+
+/* -------sponsors section------ */
+.sponsors-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0rem;
+}
+
+
 
 
 /* --------small device------- */
@@ -182,6 +197,19 @@ a {
         grid-template-columns: 1fr;
 
     }
+
+    /* ------feature section---- */
+
+
+    /* ------facts cards section---- */
+    .fact-cards-container{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .sponsors-container{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
 }
 
 /* --------medium device------- */
@@ -204,5 +232,14 @@ a {
         flex-direction: column;
         width: 80%;
         margin: 1rem auto;
+    }
+
+    /* ------feature section---- */
+
+
+    /* ------facts cards section---- */
+    .fact-cards-container{
+        flex-direction: column;
+        gap: 1.5rem;
     }
 }
