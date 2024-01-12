@@ -131,13 +131,15 @@ a {
 /* ------feature section---- */
 .feature {
     display: flex;
-    gap: 1.5rem;
+    gap: 4rem;
 }
-.feature-cards{
+
+.feature-cards {
     margin-top: 3rem;
     border-radius: 0.5rem;
     box-shadow: 0.25rem 0.25rem 0.25rem 0.25rem #727272;
 }
+
 .feature-tittle {
     color: #131313;
     font-size: 1.5rem;
@@ -145,6 +147,30 @@ a {
     margin-bottom: 1rem;
 }
 
+.ten-years-badge {
+    width: 20rem;
+    border-radius: 0.5rem;
+    background: #FF900E;
+    color: #FFF;
+    padding: 1rem;
+    position: relative;
+    top: -5rem;
+    left: -2rem;
+}
+.ten-years-badge h3{
+    
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+}
+
+.ten-years-badge p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 40px;
+}
 /* ------facts cards section---- */
 .fact-cards-container {
     display: flex;
@@ -170,6 +196,9 @@ a {
     font-size: 1.25rem;
     font-weight: 600;
 }
+
+
+
 
 /* -------sponsors section------ */
 .sponsors-container {
@@ -216,14 +245,26 @@ a {
     }
 
     /* ------feature section---- */
+    .feature {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .feature-img img{
+        width: 90%;
+        margin: 0rem auto;
+        box-shadow: 1rem 1rem 1rem #727272;
+    }
+    .feature-img .ten-years-badge{
+        position: static;
+        margin: 2rem auto;
+    }
 
-
+    
     /* ------facts cards section---- */
     .fact-cards-container {
         flex-direction: column;
         gap: 1.5rem;
     }
-
     /* ------sponsors section---- */
     .sponsors-container {
         flex-direction: column;
@@ -254,12 +295,29 @@ a {
     }
 
     /* ------feature section---- */
+    .feature {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .feature-img img{
+        width: 90%;
+        margin: 0rem auto;
+        box-shadow: 1rem 1rem 1rem #727272;
+    }
+    .feature-img .ten-years-badge{
+        position: static;
+        margin: 2rem auto;
+        box-shadow: 1rem 1rem 1rem #727272;
+    }
 
 
     /* ------facts cards section---- */
     .fact-cards-container {
         flex-direction: column;
         gap: 1.5rem;
+    }
+    .fact-cards {
+        box-shadow: 1rem 1rem 1rem #727272;
     }
 
     /* ------sponsors section---- */
